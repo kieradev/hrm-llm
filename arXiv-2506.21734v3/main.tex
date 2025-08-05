@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+
+% Math commands adapted from ICLR 2025 template
+\input{math_commands}
+% LaTeX template adapted from DreamerV3
+\input{commands}
+
+\title{Hierarchical Reasoning Model}
+
+\date{}
+\author{%
+\footnotesize
+  Guan Wang$^{1,\dagger}$, %
+  Jin Li$^{1}$, %
+  Yuhao Sun$^{1}$, %
+  Xing Chen$^{1}$, %
+  Changling Liu$^{1}$, \\ %
+\footnotesize
+  Yue Wu$^{1}$, %
+  Meng Lu$^{1,\dagger}$, %
+  Sen Song$^{2,\dagger}$, %
+  Yasin Abbasi Yadkori$^{1,\dagger}$%
+  \\[1ex]
+  $^{1}$Sapient Intelligence, Singapore
+}
+
+\begin{document}
+\pagestyle{fancy}
+
+\maketitle
+\thispagestyle{first}
+
+\footnotetext[2]{Tsinghua University $^{\dagger}$ Corresponding author. Contact: \texttt{research@sapient.inc}.
+
+\hspace{\footnotesep}Code available at: \href{https://github.com/sapientinc/HRM}{\texttt{github.com/sapientinc/HRM}}}
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\vfill
+\input{figures/benchmark_bars/figure}
+\vfill
+\clearpage
+
+\input{sections/1_intro}
+\input{sections/2_method}
+\input{sections/3_results}
+\input{sections/5_brain_correspondence}
+\input{sections/relatedwork}
+\input{sections/6_discussion}
+\input{sections/7_conclusion}
+
+\clearpage
+\begin{hyphenrules}{nohyphenation}
+\setlength{\bibsep}{.5ex plus .8ex}
+\bibliographystyle{unsrtnat}
+\bibliography{main}
+\end{hyphenrules}
+
+\clearpage
+\appendix
+
+\end{document}

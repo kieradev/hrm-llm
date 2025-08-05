@@ -1,0 +1,19 @@
+\section{Discussions}
+
+\paragraph{Turing-completeness of HRM}
+
+Like earlier neural reasoning algorithms including the Universal Transformer~\citep{UniversalTransformer2018}, HRM is computationally universal when given sufficient memory and time constraints. In other words, it falls into the category of models that can simulate any Turing machine, overcoming the computational limitations of standard Transformers discussed previously in the introduction. Given that earlier neural algorithm reasoners were trained as recurrent neural networks, they suffer from premature convergence and memory intensive BPTT. Therefore, in practice, their effective computational depth remains limited, though still deeper than that of a standard Transformer. By resolving these two challenges and being equipped with adaptive computation, HRM could be trained on long reasoning processes, solve complex puzzles requiring intensive depth-first search and backtracking, and move closer to  practical Turing-completeness.
+
+\paragraph{Reinforcement learning with chain-of-thought}
+
+Beyond fine-tuning using human-annotated CoT, reinforcement learning (RL) represents another widely adopted training methodology. 
+However, recent evidence suggests that RL primarily unlocks existing CoT-like capabilities rather than discovering fundamentally new reasoning mechanisms~\citep{wang2025,Muennighoff2025s1, lightr12025, limr2025}.
+Additionally, CoT-training with RL is known for its instability and data inefficiency, often requiring extensive exploration and careful reward design. In contrast, HRM takes feedback from dense gradient-based supervision rather than relying on a sparse reward signal. Moreover, HRM 
+operates naturally in a continuous space, which is biologically plausible and avoids allocating same computational resources to each token, even though tokens vary in their reasoning and planning complexity~\cite{CoconutLatentReasoning2024}.
+
+\paragraph{Linear attention}
+
+Recurrence has been explored not only for its capability in universal computation, but also as a means to replace the attention mechanism in Transformers, which suffers from quadratic time and memory complexity~\citep{Dao2024TransformersAS}. Recurrent alternatives offer a more efficient design by processing input tokens sequentially and predicting the next token at each time step, similar to early RNN-based language models.
+
+Some linear-attention variants, such as Log-linear Attention \cite{guo2025log}, share an RNN-like state-update that can be interpreted as propagating multi-timescale summary statistics, thereby retaining long-range context without the quadratic memory growth of standard self-attention.
+However, substituting the attention mechanism alone does not change the fact that Transformers are still fixed-depth, and require CoT as a compensatory mechanism. Notably, linear attention can operate with a reduced key-value cache over extended contexts, making them more suitable for deployment on resource-constrained edge devices.

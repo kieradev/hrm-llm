@@ -1,0 +1,522 @@
+\begin{thebibliography}{101}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and Courville]{Goodfellow-et-al-2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock \emph{Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem[He et~al.(2015)He, Zhang, Ren, and Sun]{He2015DeepRL}
+Kaiming He, X.~Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock \emph{2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 770--778, 2015.
+
+\bibitem[Strobl(2023)]{strobl-2023}
+Lena Strobl.
+\newblock Average-hard attention transformers are constant-depth uniform threshold circuits, 2023.
+
+\bibitem[Bylander(1991)]{10.5555/1631171.1631212}
+Tom Bylander.
+\newblock Complexity results for planning.
+\newblock In \emph{Proceedings of the 12th International Joint Conference on Artificial Intelligence - Volume 1}, IJCAI'91, page 274–279, San Francisco, CA, USA, 1991. Morgan Kaufmann Publishers Inc.
+\newblock ISBN 1558601600.
+
+\bibitem[Merrill and Sabharwal(2023{\natexlab{a}})]{MS-2023}
+William Merrill and Ashish Sabharwal.
+\newblock A logic for expressing log-precision transformers.
+\newblock In \emph{Neural Information Processing Systems}, 2023{\natexlab{a}}.
+
+\bibitem[Chiang(2025)]{Chiang-2025}
+David Chiang.
+\newblock Transformers in {DLOGTIME}-uniform $\text{TC}^0$.
+\newblock \emph{Transactions on Machine Learning Research}, 2025.
+
+\bibitem[Lehnert et~al.(2024{\natexlab{a}})Lehnert, Sukhbaatar, Su, Zheng, McVay, Rabbat, and Tian]{Lehnert2024BeyondAB}
+Lucas Lehnert, Sainbayar Sukhbaatar, DiJia Su, Qinqing Zheng, Paul McVay, Michael Rabbat, and Yuandong Tian.
+\newblock Beyond a*: Better planning with transformers via search dynamics bootstrapping.
+\newblock In \emph{First Conference on Language Modeling}, 2024{\natexlab{a}}.
+
+\bibitem[Bounsi et~al.(2024)Bounsi, Ibarz, Dudzik, Hamrick, Markeeva, Vitvitskyi, Pascanu, and Velivckovi'c]{Bounsi2024TransformersMN}
+Wilfried Bounsi, Borja Ibarz, Andrew Dudzik, Jessica~B. Hamrick, Larisa Markeeva, Alex Vitvitskyi, Razvan Pascanu, and Petar Velivckovi'c.
+\newblock Transformers meet neural algorithmic reasoners.
+\newblock \emph{ArXiv}, abs/2406.09308, 2024.
+
+\bibitem[Merrill and Sabharwal(2023{\natexlab{b}})]{merrill-sabharwal-2023-parallelism}
+William Merrill and Ashish Sabharwal.
+\newblock The parallelism tradeoff: Limitations of log-precision transformers.
+\newblock \emph{Transactions of the Association for Computational Linguistics}, 11:\penalty0 531--545, 2023{\natexlab{b}}.
+\newblock \doi{10.1162/tacl_a_00562}.
+
+\bibitem[Wei et~al.(2022)Wei, Tay, et~al.]{ChainOfThought2022}
+Jason Wei, Yi~Tay, et~al.
+\newblock Chain-of-thought prompting elicits reasoning in large language models, 2022.
+\newblock arXiv preprint arXiv:2201.11903.
+
+\bibitem[Merrill and Sabharwal(2024)]{MS-2024}
+William Merrill and Ashish Sabharwal.
+\newblock The expressive power of transformers with chain of thought.
+\newblock In \emph{ICLR}, 2024.
+
+\bibitem[Chen et~al.(2024)Chen, Chi, Wang, and Zhou]{Chen2024PremiseOM}
+Xinyun Chen, Ryan~A. Chi, Xuezhi Wang, and Denny Zhou.
+\newblock Premise order matters in reasoning with large language models.
+\newblock \emph{ArXiv}, abs/2402.08939, 2024.
+
+\bibitem[Xu et~al.(2024)Xu, Qi, and Xu]{Xu2024PreemptiveA}
+Rongwu Xu, Zehan Qi, and Wei Xu.
+\newblock Preemptive answer "attacks" on chain-of-thought reasoning.
+\newblock In \emph{Annual Meeting of the Association for Computational Linguistics}, 2024.
+
+\bibitem[Villalobos et~al.(2022)Villalobos, Ho, Sevilla, Besiroglu, Heim, and Hobbhahn]{Villalobos2022WillWR}
+Pablo Villalobos, Anson Ho, Jaime Sevilla, Tamay Besiroglu, Lennart Heim, and Marius Hobbhahn.
+\newblock Will we run out of data? limits of llm scaling based on human-generated data.
+\newblock \emph{arXiv preprint arXiv:2211.04325}, 2022.
+
+\bibitem[Chen et~al.(2025)Chen, Zhao, Xia, Lu, Wang, Chen, Zhang, Wang, Li, and Shen]{Chen2025ReasoningBL}
+Xinghao Chen, Anhao Zhao, Heming Xia, Xuan Lu, Hanlin Wang, Yanjun Chen, Wei Zhang, Jian Wang, Wenjie Li, and Xiaoyu Shen.
+\newblock Reasoning beyond language: A comprehensive survey on latent chain-of-thought reasoning, 2025.
+
+\bibitem[Shen et~al.(2024)Shen, Wang, Shi, Wang, Zhao, and Gu]{CoconutLatentReasoning2024}
+Xuan Shen, Yizhou Wang, Xiangxi Shi, Yanzhi Wang, Pu~Zhao, and Jiuxiang Gu.
+\newblock Training large language models to reason in a continuous latent space.
+\newblock \emph{arXiv preprint arXiv:2412.07423}, 2024.
+
+\bibitem[Fedorenko et~al.(2024)Fedorenko, Piantadosi, and Gibson]{fedorenko2024language}
+Evelina Fedorenko, Steven~T Piantadosi, and Edward~AF Gibson.
+\newblock Language is primarily a tool for communication rather than thought.
+\newblock \emph{Nature}, 630\penalty0 (8017):\penalty0 575--586, 2024.
+
+\bibitem[Wang et~al.(2024)Wang, Ma, Dong, Huang, Zhang, and Wei]{wang2024deepnet}
+Hongyu Wang, Shuming Ma, Li~Dong, Shaohan Huang, Dongdong Zhang, and Furu Wei.
+\newblock Deepnet: Scaling transformers to 1,000 layers.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, 2024.
+
+\bibitem[Lillicrap and Santoro(2019)]{LILLICRAP201982}
+Timothy~P Lillicrap and Adam Santoro.
+\newblock Backpropagation through time and the brain.
+\newblock \emph{Current Opinion in Neurobiology}, 55:\penalty0 82--89, 2019.
+\newblock ISSN 0959-4388.
+\newblock \doi{https://doi.org/10.1016/j.conb.2019.01.011}.
+
+\bibitem[Murray et~al.(2014)Murray, Bernacchia, Freedman, Romo, Wallis, Cai, Padoa-Schioppa, Pasternak, Seo, Lee, et~al.]{murray2014hierarchy}
+John~D Murray, Alberto Bernacchia, David~J Freedman, Ranulfo Romo, Jonathan~D Wallis, Xinying Cai, Camillo Padoa-Schioppa, Tatiana Pasternak, Hyojung Seo, Daeyeol Lee, et~al.
+\newblock A hierarchy of intrinsic timescales across primate cortex.
+\newblock \emph{Nature neuroscience}, 17\penalty0 (12):\penalty0 1661--1663, 2014.
+
+\bibitem[Zeraati et~al.(2023)Zeraati, Shi, Steinmetz, Gieselmann, Thiele, Moore, Levina, and Engel]{zeraati2023intrinsic}
+Roxana Zeraati, Yan-Liang Shi, Nicholas~A Steinmetz, Marc~A Gieselmann, Alexander Thiele, Tirin Moore, Anna Levina, and Tatiana~A Engel.
+\newblock Intrinsic timescales in the visual cortex change with selective attention and reflect spatial connectivity.
+\newblock \emph{Nature communications}, 14\penalty0 (1):\penalty0 1858, 2023.
+
+\bibitem[Huntenburg et~al.(2018)Huntenburg, Bazin, and Margulies]{huntenburg2018large}
+Julia~M Huntenburg, Pierre-Louis Bazin, and Daniel~S Margulies.
+\newblock Large-scale gradients in human cortical organization.
+\newblock \emph{Trends in cognitive sciences}, 22\penalty0 (1):\penalty0 21--31, 2018.
+
+\bibitem[Lamme and Roelfsema(2000)]{lamme2000distinct}
+Victor~AF Lamme and Pieter~R Roelfsema.
+\newblock The distinct modes of vision offered by feedforward and recurrent processing.
+\newblock \emph{Trends in neurosciences}, 23\penalty0 (11):\penalty0 571--579, 2000.
+
+\bibitem[Bastos et~al.(2012)Bastos, Usrey, Adams, Mangun, Fries, and Friston]{bastos2012canonical}
+Andre~M Bastos, W~Martin Usrey, Rick~A Adams, George~R Mangun, Pascal Fries, and Karl~J Friston.
+\newblock Canonical microcircuits for predictive coding.
+\newblock \emph{Neuron}, 76\penalty0 (4):\penalty0 695--711, 2012.
+
+\bibitem[Kaleb et~al.(2024)Kaleb, Feulner, Gallego, and Clopath]{kaleb2024feedback}
+Klara Kaleb, Barbara Feulner, Juan Gallego, and Claudia Clopath.
+\newblock Feedback control guides credit assignment in recurrent neural networks.
+\newblock \emph{Advances in Neural Information Processing Systems}, 37:\penalty0 5122--5144, 2024.
+
+\bibitem[Lillicrap et~al.(2020)Lillicrap, Santoro, Marris, Akerman, and Hinton]{lillicrap2020backpropagation}
+Timothy~P Lillicrap, Adam Santoro, Luke Marris, Colin~J Akerman, and Geoffrey Hinton.
+\newblock Backpropagation and the brain.
+\newblock \emph{Nature Reviews Neuroscience}, 21\penalty0 (6):\penalty0 335--346, 2020.
+
+\bibitem[Chollet(2019)]{AbstractionReasoning2019}
+Fran\c{c}ois Chollet.
+\newblock On the measure of intelligence (abstraction and reasoning corpus), 2019.
+\newblock arXiv preprint arXiv:1911.01547.
+
+\bibitem[Chollet et~al.(2024)Chollet, Knoop, Kamradt, and Landers]{Chollet2024ARCP2}
+Francois Chollet, Mike Knoop, Gregory Kamradt, and Bryan Landers.
+\newblock Arc prize 2024: Technical report.
+\newblock \emph{ArXiv}, abs/2412.04604, 2024.
+
+\bibitem[Chollet et~al.(2025)Chollet, Knoop, Kamradt, Landers, and Pinkard]{Chollet2025ARCAGI2AN}
+Francois Chollet, Mike Knoop, Gregory Kamradt, Bryan Landers, and Henry Pinkard.
+\newblock Arc-agi-2: A new challenge for frontier ai reasoning systems.
+\newblock \emph{arXiv preprint arXiv:2505.11831}, 2025.
+
+\bibitem[Buzsáki(2000)]{buzsaki2000gamma}
+György Buzsáki.
+\newblock Gamma, alpha, delta, and theta oscillations govern cognitive processes.
+\newblock \emph{International Journal of Psychophysiology}, 39:\penalty0 241--248, 2000.
+
+\bibitem[Buzs{\'a}ki(2006)]{buzsaki2006rhythms}
+Gy{\"o}rgy Buzs{\'a}ki.
+\newblock \emph{Rhythms of the Brain}.
+\newblock Oxford university press, 2006.
+
+\bibitem[Pahor and Jau{\v{s}}ovec(2014)]{pahor2014theta}
+Anja Pahor and Norbert Jau{\v{s}}ovec.
+\newblock Theta--gamma cross-frequency coupling relates to the level of human intelligence.
+\newblock \emph{Intelligence}, 46:\penalty0 283--290, 2014.
+
+\bibitem[Tort et~al.(2009)Tort, Komorowski, Manns, Kopell, and Eichenbaum]{tort2009theta}
+Adriano~BL Tort, Robert~W Komorowski, Joseph~R Manns, Nancy~J Kopell, and Howard Eichenbaum.
+\newblock Theta--gamma coupling increases during the learning of item--context associations.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 106\penalty0 (49):\penalty0 20942--20947, 2009.
+
+\bibitem[Scellier and Bengio(2016)]{Scellier2016EquilibriumPB}
+Benjamin Scellier and Yoshua Bengio.
+\newblock Equilibrium propagation: Bridging the gap between energy-based models and backpropagation.
+\newblock \emph{Frontiers in Computational Neuroscience}, 11, 2016.
+
+\bibitem[Bellec et~al.(2020)Bellec, Scherr, Subramoney, Hajek, Salaj, Legenstein, and Maass]{Eprop}
+Guillaume Bellec, Franz Scherr, Anand Subramoney, Elias Hajek, Darjan Salaj, Robert Legenstein, and Wolfgang Maass.
+\newblock A solution to the learning dilemma for recurrent networks of spiking neurons.
+\newblock \emph{Nature Communications}, 11, 07 2020.
+\newblock \doi{10.1038/s41467-020-17236-y}.
+
+\bibitem[Bai et~al.(2019)Bai, Kolter, and Koltun]{bai2019deep}
+Shaojie Bai, J~Zico Kolter, and Vladlen Koltun.
+\newblock Deep equilibrium models.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages 690--701, 2019.
+
+\bibitem[Geng et~al.(2021)Geng, Zhang, Bai, Wang, and Lin]{Geng2021OnTI}
+Zhengyang Geng, Xinyu Zhang, Shaojie Bai, Yisen Wang, and Zhouchen Lin.
+\newblock On training implicit models.
+\newblock \emph{ArXiv}, abs/2111.05177, 2021.
+
+\bibitem[Begus and Bonawitz(2020)]{BEGUS2020100810}
+Katarina Begus and Elizabeth Bonawitz.
+\newblock The rhythm of learning: Theta oscillations as an index of active learning in infancy.
+\newblock \emph{Developmental Cognitive Neuroscience}, 45:\penalty0 100810, 2020.
+\newblock ISSN 1878-9293.
+\newblock \doi{https://doi.org/10.1016/j.dcn.2020.100810}.
+
+\bibitem[Bai et~al.(2022)Bai, Geng, Savani, and Kolter]{DEQ-Flow}
+Shaojie Bai, Zhengyang Geng, Yash Savani, and J.~Zico Kolter.
+\newblock { Deep Equilibrium Optical Flow Estimation }.
+\newblock In \emph{2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 610--620, 2022.
+
+\bibitem[Ramzi et~al.(2021)Ramzi, Mannel, Bai, Starck, Ciuciu, and Moreau]{Ramzi2021SHINEST}
+Zaccharie Ramzi, Florian Mannel, Shaojie Bai, Jean-Luc Starck, Philippe Ciuciu, and Thomas Moreau.
+\newblock Shine: Sharing the inverse estimate from the forward pass for bi-level optimization and implicit models.
+\newblock \emph{ArXiv}, abs/2106.00553, 2021.
+
+\bibitem[Bai et~al.(2021)Bai, Koltun, and Kolter]{Bai2021StabilizingEM}
+Shaojie Bai, Vladlen Koltun, and J.~Zico Kolter.
+\newblock Stabilizing equilibrium models by jacobian regularization.
+\newblock In \emph{International Conference on Machine Learning}, 2021.
+
+\bibitem[Kahneman and Egan(2011)]{kahneman2011thinking}
+Daniel Kahneman and P~Egan.
+\newblock Thinking, fast and slow (farrar, straus and giroux, new york), 2011.
+
+\bibitem[Lieberman(2007)]{lieberman2007social}
+Matthew~D Lieberman.
+\newblock Social cognitive neuroscience: a review of core processes.
+\newblock \emph{Annu. Rev. Psychol.}, 58\penalty0 (1):\penalty0 259--289, 2007.
+
+\bibitem[Buckner et~al.(2008)Buckner, Andrews-Hanna, and Schacter]{buckner2008brain}
+Randy~L Buckner, Jessica~R Andrews-Hanna, and Daniel~L Schacter.
+\newblock The brain's default network: anatomy, function, and relevance to disease.
+\newblock \emph{Annals of the new York Academy of Sciences}, 1124\penalty0 (1):\penalty0 1--38, 2008.
+
+\bibitem[Raichle(2015)]{raichle2015brain}
+Marcus~E Raichle.
+\newblock The brain's default mode network.
+\newblock \emph{Annual review of neuroscience}, 38\penalty0 (1):\penalty0 433--447, 2015.
+
+\bibitem[Westbrook and Braver(2015)]{westbrook2015cognitive}
+Andrew Westbrook and Todd~S Braver.
+\newblock Cognitive effort: A neuroeconomic approach.
+\newblock \emph{Cognitive, Affective, \& Behavioral Neuroscience}, 15:\penalty0 395--415, 2015.
+
+\bibitem[Sutton and Barto(2018)]{Sutton-Barto-2018}
+Richard~S. Sutton and Andrew~G. Barto.
+\newblock \emph{Reinforcement Learning: An Introduction}.
+\newblock MIT Press, Cambridge, MA, 2018.
+
+\bibitem[Mnih et~al.(2013)Mnih, Kavukcuoglu, Silver, Graves, Antonoglou, Wierstra, and Riedmiller]{DQN}
+Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, and Martin~A. Riedmiller.
+\newblock Playing atari with deep reinforcement learning.
+\newblock \emph{ArXiv}, abs/1312.5602, 2013.
+
+\bibitem[Gallici et~al.(2025)Gallici, Fellows, Ellis, Pou, Masmitja, Foerster, and Martin]{PQN2025}
+Matteo Gallici, Mattie Fellows, Benjamin Ellis, Bartomeu Pou, Ivan Masmitja, Jakob~Nicolaus Foerster, and Mario Martin.
+\newblock Simplifying deep temporal difference learning, 2025.
+
+\bibitem[Xie and Li(2024)]{Xie2024ImplicitBO}
+Shuo Xie and Zhiyuan Li.
+\newblock Implicit bias of adamw: L inf norm constrained optimization.
+\newblock \emph{ArXiv}, abs/2404.04454, 2024.
+
+\bibitem[Prieto et~al.(2025)Prieto, Barsbey, Mediano, and Birdal]{PBMB-2025}
+Lucas Prieto, Melih Barsbey, Pedro A.~M. Mediano, and Tolga Birdal.
+\newblock Grokking at the edge of numerical stability.
+\newblock In \emph{The Thirteenth International Conference on Learning Representations}, 2025.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in neural information processing systems}, pages 5998--6008, 2017.
+
+\bibitem[{Meta AI}(2024)]{meta2024llama3}
+{Meta AI}.
+\newblock Llama 3: State-of-the-art open weight language models.
+\newblock Technical report, Meta, 2024.
+\newblock URL \url{https://ai.meta.com/llama/}.
+
+\bibitem[Su et~al.(2024)Su, Ahmed, Lu, Pan, Bo, and Liu]{SHLPBL-2024}
+Jianlin Su, Murtadha Ahmed, Yu~Lu, Shengfeng Pan, Wen Bo, and Yunfeng Liu.
+\newblock Roformer: Enhanced transformer with rotary position embedding.
+\newblock \emph{Neurocomputing}, 568:\penalty0 127063, 2024.
+
+\bibitem[Shazeer(2020)]{Shazeer2020GLUVI}
+Noam~M. Shazeer.
+\newblock Glu variants improve transformer.
+\newblock \emph{ArXiv}, abs/2002.05202, 2020.
+
+\bibitem[Zhang and Sennrich(2019)]{Zhang2019RootMS}
+Biao Zhang and Rico Sennrich.
+\newblock Root mean square layer normalization.
+\newblock \emph{ArXiv}, abs/1910.07467, 2019.
+
+\bibitem[Klambauer et~al.(2017)Klambauer, Unterthiner, Mayr, and Hochreiter]{Klambauer2017SelfNormalizingNN}
+G{\"u}nter Klambauer, Thomas Unterthiner, Andreas Mayr, and Sepp Hochreiter.
+\newblock Self-normalizing neural networks.
+\newblock In \emph{Neural Information Processing Systems}, 2017.
+
+\bibitem[{JAX Developers}(2025)]{jax_lecun_normal_initializer}
+{JAX Developers}.
+\newblock \emph{jax.nn.initializers.lecun\_normal}.
+\newblock Google Research, 2025.
+\newblock URL \url{https://docs.jax.dev/en/latest/_autosummary/jax.nn.initializers.lecun_normal.html}.
+\newblock Accessed June 22, 2025.
+
+\bibitem[LeCun et~al.(2002)LeCun, Bottou, Orr, and M{\"u}ller]{lecun2002efficient}
+Yann LeCun, L{\'e}on Bottou, Genevieve~B Orr, and Klaus-Robert M{\"u}ller.
+\newblock Efficient backprop.
+\newblock In \emph{Neural networks: Tricks of the trade}, pages 9--50. Springer, 2002.
+
+\bibitem[Everett et~al.(2024)Everett, Xiao, Wortsman, Alemi, Novak, Liu, Gur, Sohl-Dickstein, Kaelbling, Lee, and Pennington]{EXWANLGSKLP-2024}
+Katie~E Everett, Lechao Xiao, Mitchell Wortsman, Alexander~A Alemi, Roman Novak, Peter~J Liu, Izzeddin Gur, Jascha Sohl-Dickstein, Leslie~Pack Kaelbling, Jaehoon Lee, and Jeffrey Pennington.
+\newblock Scaling exponents across parameterizations and optimizers.
+\newblock In \emph{Forty-first International Conference on Machine Learning}, 2024.
+
+\bibitem[Kingma and Ba(2017)]{KB-2017}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization, 2017.
+
+\bibitem[Palm et~al.(2017)Palm, Paquet, and Winther]{Palm2017RecurrentRN}
+Rasmus~Berg Palm, Ulrich Paquet, and Ole Winther.
+\newblock Recurrent relational networks.
+\newblock In \emph{Neural Information Processing Systems}, 2017.
+
+\bibitem[Long(2023)]{Long2023LargeLM}
+Jieyi Long.
+\newblock Large language model guided tree-of-thought.
+\newblock \emph{ArXiv}, abs/2305.08291, 2023.
+
+\bibitem[Du et~al.(2024)Du, Mao, and Tenenbaum]{Du2024LearningIR}
+Yilun Du, Jiayuan Mao, and Josh Tenenbaum.
+\newblock Learning iterative reasoning through energy diffusion.
+\newblock \emph{ArXiv}, abs/2406.11179, 2024.
+
+\bibitem[Park(2018)]{sudoku2018}
+Kyubyong Park.
+\newblock Can convolutional neural networks crack sudoku puzzles?
+\newblock \url{https://github.com/Kyubyong/sudoku}, 2018.
+
+\bibitem[SDT()]{SDT-Sudoku}
+Single-digit techniques.
+\newblock \url{https://hodoku.sourceforge.net/en/tech_singles.php}.
+\newblock Accessed: 2025-06-16.
+
+\bibitem[Dillion(2025)]{tdoku}
+Tom Dillion.
+\newblock Tdoku: A fast sudoku solver and generator.
+\newblock \url{https://t-dillon.github.io/tdoku/}, 2025.
+
+\bibitem[Seely et~al.(2025)Seely, Imajuku, Zhao, Cetin, and Jones]{Seely2025SudokuBenchEC}
+Jeffrey Seely, Yuki Imajuku, Tianyu Zhao, Edoardo Cetin, and Llion Jones.
+\newblock Sudoku-bench: Evaluating creative reasoning with sudoku variants.
+\newblock \emph{arXiv preprint arXiv:2505.16135}, 2025.
+
+\bibitem[Darlow et~al.(2025)Darlow, Regan, Risi, Seely, and Jones]{Darlow2025ContinuousTM}
+Luke Darlow, Ciaran Regan, Sebastian Risi, Jeffrey Seely, and Llion Jones.
+\newblock Continuous thought machines.
+\newblock \emph{arXiv preprint arXiv:2505.05522}, 2025.
+
+\bibitem[Su et~al.(2025)Su, Sukhbaatar, Rabbat, Tian, and Zheng]{dualformer2025}
+DiJia Su, Sainbayar Sukhbaatar, Michael Rabbat, Yuandong Tian, and Qinqing Zheng.
+\newblock Dualformer: Controllable fast and slow thinking by learning with randomized reasoning traces, 2025.
+
+\bibitem[Lehnert et~al.(2024{\natexlab{b}})Lehnert, Sukhbaatar, Su, Zheng, McVay, Rabbat, and Tian]{searchformer2024}
+Lucas Lehnert, Sainbayar Sukhbaatar, DiJia Su, Qinqing Zheng, Paul McVay, Michael Rabbat, and Yuandong Tian.
+\newblock Beyond a*: Better planning with transformers via search dynamics bootstrapping.
+\newblock In \emph{First Conference on Language Modeling}, 2024{\natexlab{b}}.
+
+\bibitem[Kapadia et~al.(2013)Kapadia, Garcia, Boatright, and Badler]{wavefrontBFS}
+Mubbasir Kapadia, Francisco Garcia, Cory~D. Boatright, and Norman~I. Badler.
+\newblock Dynamic search on the gpu.
+\newblock In \emph{2013 IEEE/RSJ International Conference on Intelligent Robots and Systems}, pages 3332--3337, 2013.
+\newblock \doi{10.1109/IROS.2013.6696830}.
+
+\bibitem[Liao and Gu(2025)]{liao2025arcagiwithoutpretraining}
+Isaac Liao and Albert Gu.
+\newblock Arc-agi without pretraining, 2025.
+\newblock URL \url{https://iliao2345.github.io/blog_posts/arc_agi_without_pretraining/arc_agi_without_pretraining.html}.
+
+\bibitem[Posani et~al.(2025)Posani, Wang, Muscinelli, Paninski, and Fusi]{posani2025rarely}
+Lorenzo Posani, Shuqi Wang, Samuel~P Muscinelli, Liam Paninski, and Stefano Fusi.
+\newblock Rarely categorical, always high-dimensional: how the neural code changes along the cortical hierarchy.
+\newblock \emph{bioRxiv}, pages 2024--11, 2025.
+
+\bibitem[Rigotti et~al.(2013)Rigotti, Barak, Warden, Wang, Daw, Miller, and Fusi]{rigotti2013importance}
+Mattia Rigotti, Omri Barak, Melissa~R. Warden, Xiao-Jing Wang, Nathaniel~D. Daw, Earl~K. Miller, and Stefano Fusi.
+\newblock The importance of mixed selectivity in complex cognitive tasks.
+\newblock \emph{Nature}, 497:\penalty0 585--590, 2013.
+\newblock \doi{10.1038/nature12160}.
+
+\bibitem[Mante et~al.(2013)Mante, Sussillo, Shenoy, and Newsome]{mante2013context}
+Valerio Mante, David Sussillo, Krishna~V. Shenoy, and William~T. Newsome.
+\newblock Context-dependent computation by recurrent dynamics in prefrontal cortex.
+\newblock \emph{Nature}, 503\penalty0 (7474):\penalty0 78--84, 2013.
+\newblock \doi{10.1038/nature12742}.
+
+\bibitem[Miller and Cohen(2001)]{miller2001integrative}
+Earl~K. Miller and Jonathan~D. Cohen.
+\newblock An integrative theory of prefrontal cortex function.
+\newblock \emph{Annual Review of Neuroscience}, 24\penalty0 (1):\penalty0 167--202, 2001.
+\newblock \doi{10.1146/annurev.neuro.24.1.167}.
+
+\bibitem[Maass(2002)]{maass2002realtime}
+Wolfgang Maass.
+\newblock Real-time computing without stable states: a new framework for neural computation based on perturbations.
+\newblock \emph{Neural Computation}, 14\penalty0 (11):\penalty0 2531--2560, 2002.
+\newblock \doi{10.1162/089976602760407955}.
+
+\bibitem[Altan et~al.(2021)Altan, Solla, Miller, and Perreault]{altan2021estimating}
+Ege Altan, Sara~A. Solla, Lee~E. Miller, and Eric~J. Perreault.
+\newblock Estimating the dimensionality of the manifold underlying multi-electrode neural recordings.
+\newblock \emph{PLoS Computational Biology}, 17\penalty0 (11):\penalty0 e1008591, 2021.
+\newblock \doi{10.1371/journal.pcbi.1008591}.
+
+\bibitem[Papyan et~al.(2020)Papyan, Han, and Donoho]{papyan2020prevalence}
+Vardan Papyan, X.~Y. Han, and David~L. Donoho.
+\newblock Prevalence of neural collapse during the terminal phase of deep learning training.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 117\penalty0 (40):\penalty0 24652--24663, 2020.
+\newblock \doi{10.1073/pnas.2015509117}.
+
+\bibitem[Fang et~al.(2021)Fang, He, Long, and Su]{fang2021layerpeeled}
+Cong Fang, Hangfeng He, Qi~Long, and Weijie~J. Su.
+\newblock Exploring deep neural networks via layer{\textendash}peeled model: Minority collapse in imbalanced training.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 118\penalty0 (43):\penalty0 e2103091118, 2021.
+\newblock \doi{10.1073/pnas.2103091118}.
+
+\bibitem[Zhu et~al.(2021)Zhu, Ding, Zhou, Li, You, Sulam, and Qu]{zhu2021geometric}
+Zhihui Zhu, Tianyu Ding, Jinxin Zhou, Xiao Li, Chong You, Jeremias Sulam, and Qing Qu.
+\newblock A geometric analysis of neural collapse with unconstrained features.
+\newblock In \emph{Advances in Neural Information Processing Systems}, volume~34 of \emph{NeurIPS}, pages 29820--29834, 2021.
+
+\bibitem[Graves et~al.(2014)Graves, Wayne, and Danihelka]{NTK2014}
+Alex Graves, Greg Wayne, and Ivo Danihelka.
+\newblock Neural turing machines, 2014.
+
+\bibitem[Graves et~al.(2016)Graves, Wayne, Reynolds, Harley, Danihelka, Grabska-Barwi{\'n}ska, Colmenarejo, Grefenstette, Ramalho, Agapiou, et~al.]{DNC2016}
+Alex Graves, Greg Wayne, Malcolm Reynolds, Tim Harley, Ivo Danihelka, Agnieszka Grabska-Barwi{\'n}ska, Sergio~G{\'o}mez Colmenarejo, Edward Grefenstette, Tiago Ramalho, John Agapiou, et~al.
+\newblock Hybrid computing using a neural network with dynamic external memory.
+\newblock \emph{Nature}, 538\penalty0 (7626):\penalty0 471--476, 2016.
+
+\bibitem[Kaiser and Sutskever(2016)]{KS-2016}
+Lukasz Kaiser and Ilya Sutskever.
+\newblock Neural {GPU}s learn algorithms.
+\newblock In \emph{ICLR}, 2016.
+
+\bibitem[Geiping et~al.(2025)Geiping, McLeish, Jain, Kirchenbauer, Singh, Bartoldson, Kailkhura, Bhatele, and Goldstein]{geiping2025}
+Jonas Geiping, Sean McLeish, Neel Jain, John Kirchenbauer, Siddharth Singh, Brian~R. Bartoldson, Bhavya Kailkhura, Abhinav Bhatele, and Tom Goldstein.
+\newblock Scaling up test-time compute with latent reasoning: A recurrent depth approach, 2025.
+
+\bibitem[Liu and Low(2023)]{Liu2023GoatFL}
+Tiedong Liu and Kian~Hsiang Low.
+\newblock Goat: Fine-tuned llama outperforms gpt-4 on arithmetic tasks.
+\newblock \emph{ArXiv}, abs/2305.14201, 2023.
+
+\bibitem[Graves(2016)]{Graves2016AdaptiveCT}
+Alex Graves.
+\newblock Adaptive computation time for recurrent neural networks.
+\newblock \emph{ArXiv}, abs/1603.08983, 2016.
+
+\bibitem[Banino et~al.(2021)Banino, Balaguer, and Blundell]{Banino2021PonderNetLT}
+Andrea Banino, Jan Balaguer, and Charles Blundell.
+\newblock Pondernet: Learning to ponder.
+\newblock \emph{ArXiv}, abs/2107.05407, 2021.
+
+\bibitem[Eliasmith et~al.(2012)Eliasmith, Stewart, Choo, Bekolay, DeWolf, Tang, and Rasmussen]{spaun}
+Chris Eliasmith, Terrence~C Stewart, Xuan Choo, Trevor Bekolay, Travis DeWolf, Yichuan Tang, and Daniel Rasmussen.
+\newblock A large-scale model of the functioning brain.
+\newblock \emph{science}, 338\penalty0 (6111):\penalty0 1202--1205, 2012.
+
+\bibitem[Whittington et~al.(2020)Whittington, Muller, Mark, Chen, Barry, Burgess, and Behrens]{TEM}
+James~CR Whittington, Timothy~H Muller, Shirley Mark, Guifen Chen, Caswell Barry, Neil Burgess, and Timothy~EJ Behrens.
+\newblock The tolman-eichenbaum machine: unifying space and relational memory through generalization in the hippocampal formation.
+\newblock \emph{Cell}, 183\penalty0 (5):\penalty0 1249--1263, 2020.
+
+\bibitem[Buesing et~al.(2011)Buesing, Bill, Nessler, and Maass]{buesing2011neural}
+Lars Buesing, Johannes Bill, Bernhard Nessler, and Wolfgang Maass.
+\newblock Neural dynamics as sampling: a model for stochastic computation in recurrent networks of spiking neurons.
+\newblock \emph{PLoS computational biology}, 7\penalty0 (11):\penalty0 e1002211, 2011.
+
+\bibitem[Hihi and Bengio(1995)]{NIPS1995_c667d53a}
+Salah Hihi and Yoshua Bengio.
+\newblock Hierarchical recurrent neural networks for long-term dependencies.
+\newblock In D.~Touretzky, M.C. Mozer, and M.~Hasselmo, editors, \emph{Advances in Neural Information Processing Systems}, volume~8. MIT Press, 1995.
+
+\bibitem[Koutn{\'i}k et~al.(2014)Koutn{\'i}k, Greff, Gomez, and Schmidhuber]{Koutnk2014ACR}
+Jan Koutn{\'i}k, Klaus Greff, Faustino~J. Gomez, and J{\"u}rgen Schmidhuber.
+\newblock A clockwork rnn.
+\newblock In \emph{International Conference on Machine Learning}, 2014.
+
+\bibitem[Dehghani et~al.(2018)Dehghani, Gouws, Vinyals, Uszkoreit, and Kaiser]{UniversalTransformer2018}
+Mostafa Dehghani, Stephan Gouws, Oriol Vinyals, Jakob Uszkoreit, and Lukasz Kaiser.
+\newblock Universal transformers, 2018.
+\newblock arXiv preprint arXiv:1807.03819.
+
+\bibitem[Wang et~al.(2025)Wang, Yang, Zeng, Ren, Liu, Peng, Cheng, He, Wang, Gao, Chen, Wang, Du, and Shen]{wang2025}
+Yiping Wang, Qing Yang, Zhiyuan Zeng, Liliang Ren, Lucas Liu, Baolin Peng, Hao Cheng, Xuehai He, Kuan Wang, Jianfeng Gao, Weizhu Chen, Shuohang Wang, Simon~Shaolei Du, and Yelong Shen.
+\newblock Reinforcement learning for reasoning in large language models with one training example, 2025.
+\newblock URL \url{https://arxiv.org/abs/2504.20571}.
+
+\bibitem[Muennighoff(2025)]{Muennighoff2025s1}
+Niklas Muennighoff.
+\newblock s1: Simple test-time scaling.
+\newblock \emph{arXiv preprint arXiv:2502.23456}, 2025.
+
+\bibitem[Wen et~al.(2025)Wen, Cai, Xiao, He, An, Duan, Du, Liu, Tang, Lv, Zou, Deng, Jia, and Zhang]{lightr12025}
+Liang Wen, Yunke Cai, Fenrui Xiao, Xin He, Qi~An, Zhenyu Duan, Yimin Du, Junchen Liu, Lifu Tang, Xiaowei Lv, Haosheng Zou, Yongchao Deng, Shousheng Jia, and Xiangzheng Zhang.
+\newblock Light-r1: Curriculum sft, dpo and rl for long cot from scratch and beyond, 2025.
+
+\bibitem[Li et~al.(2025)Li, Zou, and Liu]{limr2025}
+Xuefeng Li, Haoyang Zou, and Pengfei Liu.
+\newblock Limr: Less is more for rl scaling, 2025.
+
+\bibitem[Dao and Gu(2024)]{Dao2024TransformersAS}
+Tri Dao and Albert Gu.
+\newblock Transformers are ssms: Generalized models and efficient algorithms through structured state space duality.
+\newblock \emph{ArXiv}, abs/2405.21060, 2024.
+
+\bibitem[Guo et~al.(2025)Guo, Yang, Goel, Xing, Dao, and Kim]{guo2025log}
+Han Guo, Songlin Yang, Tarushii Goel, Eric~P Xing, Tri Dao, and Yoon Kim.
+\newblock Log-linear attention.
+\newblock \emph{arXiv preprint arXiv:2506.04761}, 2025.
+
+\end{thebibliography}

@@ -1,0 +1,166 @@
+% This LaTeX template is adapted from:
+% Danijar Hafner, Jurgis Pasukonis, Jimmy Ba, Timothy Lillicrap,
+% "Mastering Diverse Domains through World Models" (DreamerV3),
+% arXiv:2301.04104, licensed under CC‑BY 4.0.
+% https://arxiv.org/abs/2301.04104
+
+\usepackage[left=2.5cm,
+right=2.5cm,
+top=2.3cm,
+bottom=2.3cm,
+headheight=20pt,
+headsep=10pt,
+footskip=25pt,
+letterpaper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsfonts,amssymb,thmtools,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{stfloats}
+\usepackage{wrapfig}
+\usepackage{epstopdf}
+\usepackage{cleveref}
+\usepackage{subfloat}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{setspace}
+\usepackage{changepage}
+\usepackage{etoolbox}
+\usepackage{svg}
+\usepackage[percent]{overpic}
+\usepackage[round]{natbib}
+\usepackage[colorinlistoftodos, shadow,color=blue!30!white
+					,disable
+]{todonotes}
+% \usepackage{placeins}
+\usepackage{xpatch}
+\usepackage{siunitx}
+
+% Fonts
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\sfdefault}{phv}
+
+% Page layout
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+
+\fancyfoot[R]{\small\thepage}
+\fancypagestyle{first}{\fancyfoot[R]{\small\thepage}}
+
+% Spacing
+\setlength\parindent{0pt}
+\setlength\parskip{1ex plus 1ex minus 0.5ex}
+\setlist[itemize]{leftmargin=1em,itemsep=0ex,topsep=0ex}
+\setlength{\textfloatsep}{3ex plus 1ex minus 1ex}
+\titlespacing*{\paragraph}{0pt}{0ex plus .1ex}{1ex}
+\titlespacing*{\section}{0ex}{2.3ex plus .3ex minus .0ex}{.6ex plus .3ex minus .2ex}
+\titlespacing*{\subsection}{0ex}{1.5ex plus .3ex minus .5ex}{.4ex plus .2ex minus .1ex}
+\titlespacing*{\subsubsection}{0ex}{1.2ex plus .3ex minus .3ex}{.3ex plus .2ex minus .2ex}
+
+\xapptocmd\normalsize{%
+\abovedisplayskip=.8em plus .2em minus .2em
+\belowdisplayskip=.6em plus .1em minus .1em
+\abovedisplayshortskip=.8em plus .2em minus .2em
+\belowdisplayshortskip=.6em plus .1em minus .1em
+}{}{}
+
+% Formatting
+\newcommand{\itempar}[1]{\item\textbf{#1}\quad}
+\newcommand{\padspace}{\hspace{3.5em}}
+
+% References
+% \bibliographystyle{unsrtnat}
+\setcitestyle{numbers}
+\citestyle{nature}
+\renewcommand{\cite}[1]{\citep{#1}}
+
+% Link colors
+\definecolor{mydarkblue}{rgb}{0.0,0.15,0.7}
+\hypersetup{%
+colorlinks=true,
+linkcolor=mydarkblue,
+citecolor=mydarkblue,
+filecolor=mydarkblue,
+urlcolor=mydarkblue}
+
+% Pseudocode
+\lstset{
+  backgroundcolor=\color{white},
+  basicstyle=\fontsize{6.5pt}{7.5pt}\fontfamily{lmtt}\selectfont,
+  columns=fullflexible,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\fontsize{8pt}{9pt}\color{gray},
+  keywordstyle=\fontsize{8pt}{9pt}\color{blue},
+  stringstyle=\fontsize{8pt}{9pt}\color{purple},
+  frame=tb,
+  otherkeywords = {with,self},
+  upquote=true,
+}
+
+% Author
+\makeatletter
+  % author separators
+  \def\And{%
+    \end{tabular}\hfil\linebreak[0]\hfil
+    \begin{tabular}[t]{@{}c@{}}\bfseries\ignorespaces
+  }
+  \def\AND{%
+    \end{tabular}\hfil\linebreak[4]\hfil
+    \begin{tabular}[t]{@{}c@{}}\bfseries\ignorespaces
+  }
+
+  % redefine \maketitle
+  \renewcommand{\maketitle}{%
+    \begingroup
+      % title
+      {\centering\LARGE\@title\par}%
+      \vskip 1em
+      % authors
+      \centering
+      \begin{tabular}[t]{@{}c@{}}\strut\@author\strut\end{tabular}%
+      \vskip 0.3in minus 0.1in
+    \endgroup
+  }
+\makeatother
+
+% Commands
+% TODOs
+\newcommand{\todoy}[2][]{\todo[size=\scriptsize,color=blue!20!white,#1]{Yasin: #2}\xspace}
+
+
+\newcommand{\todol}[2][]{\todo[size=\scriptsize,color=brown!20!white,#1]{Lijin: #2}\xspace}
+
+\newcommand{\todos}[2][]{\todo[size=\scriptsize,color=orange!20!white,#1]{Yuhao: #2}\xspace}
+
+\newcommand{\todox}[2][]{\todo[size=\scriptsize,color=blue!20!white,#1]{Xing: #2}\xspace}
+\usepackage{xcolor}
+\newcommand{\todoxb}[1]{\textcolor{blue}{Xing: #1}} 
+
+\newcommand{\todoone}[1]{\textcolor{magenta}{One: #1}} 
+
+\newcommand{\cmtone}[2][]{\todo[size=\scriptsize,color=magenta!20!white,#1]{One: #2}\xspace} 
+
+% \newcommand{\todomeng}[1]{\textcolor{cyan}{Meng: #1}} 
+% \newcommand{\todol}[2][]{\todo[size=\scriptsize,color=green!20!white,#1]{Meng: #2}\xspace}
+
+% \newcommand{\todosyh}[1]{\textcolor{blue}{Yuhao: #1}} 
+
+% \newcommand{\todolcl}[1]{\textcolor{blue}{Hex: #1}}
+% \newcommand{\cmtlcl}[2][]{\todo[size=\scriptsize,color=cyan!20!white,#1]{Hex: #2}\xspace}
+
+\newcommand{\HRM}{\textsc{HRM}}
+
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}

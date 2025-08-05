@@ -1,0 +1,29 @@
+\section{Related Work}
+
+\paragraph{Reasoning and algorithm learning}
+Given the central role of reasoning problems and their close relation to algorithms, researchers have long explored neural architectures that enable algorithm learning from training instances. This line of work includes Neural Turing Machines (NTM)~\citep{NTK2014}, the Differentiable Neural Computer (DNC)~\citep{DNC2016}, and Neural GPUs~\citep{KS-2016}--all of which construct iterative neural architectures that mimic computational hardware for algorithm execution, and are trained to learn algorithms from data.
+Another notable work in this area is Recurrent Relational Networks (RRN) \cite{Palm2017RecurrentRN}, which executes algorithms on graph representations through graph neural networks.
+
+Recent studies have integrated algorithm learning approaches with Transformer-based architectures. 
+Universal Transformers extend the standard Transformer model by introducing a recurrent loop over the layers and implementing an adaptive halting mechanism. \citet{geiping2025} demonstrate that looped Transformers can generalize to a larger number of recurrent steps during inference than what they were trained on. \citet{CoconutLatentReasoning2024} propose adding continuous recurrent reasoning tokens to the Transformer. Finally, TransNAR \cite{Bounsi2024TransformersMN} combine recurrent graph neural networks with language models.
+
+Building on the success of CoT-based reasoning, a line of work have introduced fine-tuning methods that use reasoning paths from search algorithms (like A*) as SFT targets~\cite{Liu2023GoatFL, searchformer2024, dualformer2025}.
+
+We also mention adaptive halting mechanisms designed to allocate additional computational resources to more challenging problems. This includes the Adaptive Computation Time (ACT) for RNNs~\cite{Graves2016AdaptiveCT} and follow-up research like PonderNet~\cite{Banino2021PonderNetLT}, which aims to improve the stability of this allocation process.
+
+HRM further pushes the boundary of algorithm learning through a brain-inspired computational architecture that achieves exceptional data efficiency and model expressiveness, successfully discovering complex and diverse algorithms from just 1000 training examples.
+
+\paragraph{Brain-inspired reasoning architectures}
+
+Developing a model with the reasoning power of the brain has long been a goal in brain-inspired computing.
+Spaun~\citep{spaun} is one notable example, which uses spiking neural networks to create distinct modules corresponding to brain regions like the visual cortex and prefrontal cortex. This design enables an architecture to perform a range of cognitive tasks, from memory recall to simple reasoning puzzles. However, its reasoning relies on hand-designed algorithms, which may limit its ability to learn new tasks.
+Another significant model is the Tolman-Eichenbaum Machine (TEM)~\citep{TEM}, which is inspired by the hippocampal-entorhinal system's role in spatial and relational memory tasks. TEM proposes that medial entorhinal cells create a basis for structural knowledge, while hippocampal cells link this basis to sensory information. This allows TEM to generalize and explains the emergence of various cell types like grid, border, and place cells. 
+Another approach involves neural sampling models~\citep{buesing2011neural}, which view the neural signaling process as inference over a distribution, functioning similarly to a Boltzmann machine. These models often require hand-made rules to be set up for solving a specific reasoning task.
+In essence, while prior models are restricted to simple reasoning problems, HRM is designed to solve complex tasks that are hard for even advanced LLMs, without pre-training or task-specific manual design.
+
+\paragraph{Hierarchical memory}
+
+The hierarchical multi-timescale structure also plays an important role in how the brain processes memory. Models such as Hierarchical Sequential Models~\cite{NIPS1995_c667d53a} and Clockwork RNN~\cite{Koutnk2014ACR} use multiple recurrent modules that operate at varying time scales to more effectively capture long-range dependencies within sequences, thereby mitigating the forgetting issue in RNNs. 
+
+Similar mechanisms have also been adopted in linear attention methods for memorizing long contexts (see the Discussions section). 
+Since HRM focuses on reasoning, full attention is applied for simplicity. Incorporating hierarchical memory into HRM could be a promising future direction.
