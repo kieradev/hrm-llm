@@ -1,68 +1,57 @@
 import os
-import requests
 from tqdm import tqdm
 import tiktoken
 import numpy as np
-
-def download_file(url, fname, chunk_size=1024):
-    """Helper function to download a file with a progress bar."""
-    resp = requests.get(url, stream=True)
-    total = int(resp.headers.get('content-length', 0))
-    with open(fname, 'wb') as file, tqdm(
-        desc=fname,
-        total=total,
-        unit='iB',
-        unit_scale=True,
-        unit_divisor=1024,
-    ) as bar:
-        for data in resp.iter_content(chunk_size=chunk_size):
-            size = file.write(data)
-            bar.update(size)
+from datasets import load_dataset
 
 def main():
-    """
-    Downloads a sample dataset and preprocesses it.
-    """
-    # --- 1. Download and Prepare the Data ---
-    data_dir = os.path.dirname(os.path.abspath(__file__))
-    input_file_path = os.path.join(data_dir, 'input.txt')
-    
-    # Download a small sample dataset (Shakespeare's Hamlet)
-    if not os.path.exists(input_file_path):
-        url = "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt"
-        print(f"Downloading data from {url}...")
-        download_file(url, input_file_path)
-    else:
-        print(f"{input_file_path} already exists. Skipping download.")
-        
-    with open(input_file_path, 'r') as f:
-        data = f.read()
-    n = len(data)
-    print(f"Dataset has {n} characters.")
+    # --- Configuration ---
+    # in Colab use cwd (or replace with a Drive path)
+    data_dir = os.getcwd()
+    dataset_name = "timaeus/dsir-pile-1m-filtered-no-github-or-dm_mathematics"
+    text_column = "contents"
 
-    # --- 2. Tokenize the Data ---
-    # According to the plan, we'll use the GPT-2 tokenizer.
+    print(f"Loading dataset '{dataset_name}' in streaming mode...")
+    dataset = load_dataset(dataset_name, split="train", streaming=True)
+
+    print("Setting up tokenizer...")
     enc = tiktoken.get_encoding("gpt2")
-    tokens = enc.encode_ordinary(data)
-    print(f"Dataset has {len(tokens)} tokens.")
-    
-    # --- 3. Create Training and Validation Splits ---
-    # We'll use a 90/10 split.
-    train_tokens = tokens[:int(n*0.9)]
-    val_tokens = tokens[int(n*0.9):]
+    def tokenize_function(examples):
+        return {"tokens": enc.encode_batch(examples[text_column], disallowed_special=())}
 
-    # Export to bin files
-    train_ids = np.array(train_tokens, dtype=np.uint16)
-    val_ids = np.array(val_tokens, dtype=np.uint16)
-    
-    train_file = os.path.join(data_dir, 'train.bin')
-    val_file = os.path.join(data_dir, 'val.bin')
-    
-    train_ids.tofile(train_file)
-    val_ids.tofile(val_file)
+    tokenized = dataset.map(
+        tokenize_function,
+        batched=True,
+        remove_columns=list(dataset.features.keys())  # uses feature names instead of __file__
+    )
 
-    print(f"Saved training data to {train_file}")
-    print(f"Saved validation data to {val_file}")
-    
+    train_fp = os.path.join(data_dir, 'train.bin')
+    val_fp   = os.path.join(data_dir, 'val.bin')
+    for fp in (train_fp, val_fp):
+        if os.path.exists(fp):
+            os.remove(fp)
+
+    print(f"Writing tokens to {train_fp} and {val_fp}...")
+    total_tokens = 0
+    pbar = tqdm(total=1_000_000, desc="Rows")
+
+    with open(train_fp, 'ab') as tf, open(val_fp, 'ab') as vf:
+        for ex in tokenized:
+            toks = ex['tokens']
+            if not toks:
+                pbar.update(1)
+                continue
+            split = int(len(toks) * 0.9)
+            tf.write(np.array(toks[:split], dtype=np.uint16).tobytes())
+            vf.write(np.array(toks[split:], dtype=np.uint16).tobytes())
+            total_tokens += len(toks)
+            pbar.update(1)
+
+    pbar.close()
+    print("Done.")
+    print(f"Tokens: {total_tokens:,}")
+    print(f"Train: {train_fp}")
+    print(f"Val:   {val_fp}")
+
 if __name__ == '__main__':
     main()
